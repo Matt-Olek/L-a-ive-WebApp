@@ -32,7 +32,7 @@ const HomePage: React.FC = () => {
           </p>
           <button className="btn btn-primary shadow-lg">Découvrir</button>
           <button
-            className="btn btn-primary btn-ghost  ml-3 shadow-lg
+            className="btn btn-primary glass shadow-lg ml-5
           "
           >
             Demander une démo
