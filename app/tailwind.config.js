@@ -8,32 +8,32 @@ export default {
   daisyui: {
     themes: [
       {
-        fantasy: {
-          primary: "#6d0b74",
-          "primary-focus": "#410745",
+        light: {
+          primary: "#7B5295",
+          "primary-focus": "#4C266A",
           "primary-content": "#ffffff",
 
-          secondary: "#007ebd",
-          "secondary-focus": "#005c8a",
+          secondary: "#9E7DB3",
+          "secondary-focus": "#7B5295",
           "secondary-content": "#ffffff",
 
-          accent: "#f8860d",
-          "accent-focus": "#cb6c06",
+          accent: "#fffaff",
+          "accent-focus": "#9E7DB3",
           "accent-content": "#ffffff",
 
-          neutral: "#1e2734",
-          "neutral-focus": "#111827",
+          neutral: "#AB598B",
+          "neutral-focus": "#2a2e37",
           "neutral-content": "#ffffff",
 
           "base-100": "#ffffff",
-          "base-200": "#f9fafb",
+          "base-200": "#ffedff",
           "base-300": "#ced3d9",
           "base-content": "#1e2734",
 
-          info: "#1c92f2",
+          info: "#4C266A",
           success: "#009485",
-          warning: "#ff9900",
-          error: "#ff5724",
+          warning: "#ffb647",
+          error: "#fe8662",
 
           "--rounded-box": "1rem",
           "--rounded-btn": ".5rem",

@@ -25,3 +25,10 @@ body {
   text-shadow: none;
 }
 
+.scale-up-on-hover {
+  transition: transform 0.2s;
+}
+
+.scale-up-on-hover:hover {
+  transform: scale(1.05);
+}
