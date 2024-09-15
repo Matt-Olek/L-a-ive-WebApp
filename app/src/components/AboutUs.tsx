@@ -38,7 +38,7 @@ const AboutUs: React.FC = () => {
       <div
         className="hero min-h-screen bg-base-200"
         style={{
-          backgroundImage: VanishingStripes,
+          backgroundImage: `url(${VanishingStripes})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundBlendMode: "luminosity",

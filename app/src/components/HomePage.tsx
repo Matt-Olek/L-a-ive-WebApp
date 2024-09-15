@@ -47,7 +47,7 @@ const HomePage: React.FC = () => {
       {/* Hero Section */}
       <div
         className="hero min-h-screen bg-cover bg-center flex items-center justify-center"
-        style={{ backgroundImage: vanishingStripes }}
+        style={{ backgroundImage: `url(${vanishingStripes})` }}
       >
         <div className="hero-overlay bg-white bg-opacity-10 absolute inset-0"></div>
         <div
