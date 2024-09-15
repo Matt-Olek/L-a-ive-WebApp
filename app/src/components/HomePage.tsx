@@ -14,7 +14,7 @@ import MockupDiscussion from "./MockupDiscussion";
 import Typewriter from "typewriter-effect";
 
 //importing assets
-import vanishingStripes from "../assets/vanishing-stripes2.svg";
+import vanishingStripes from "../assets/vanishing_stripes2.svg";
 
 // Register the necessary components in Chart.js
 ChartJS.register(

@@ -4,7 +4,7 @@ import React from "react";
 import ClaraBerger from "../assets/Clara_Berger.jpg";
 import MatthieuOlekhnovitch from "../assets/Matthieu_Olekhnovitch.jpg";
 import FlorianPalmade from "../assets/Florian_Palmade.jpg";
-import VanishingStripes from "../assets/vanishing-stripes2.svg";
+import VanishingStripes from "../assets/vanishing_stripes2.svg";
 
 const AboutUs: React.FC = () => {
   // Founders Data
