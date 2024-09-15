@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar: React.FC = () => {
   return (
@@ -37,12 +38,12 @@ const Navbar: React.FC = () => {
               <a className="btn btn-outline btn-primary btn-sm m-1">Services</a>
             </li>
             <li>
-              <a
-                href="/about"
+              <NavLink
+                to="/about"
                 className="btn btn-outline btn-primary btn-sm m-1"
               >
                 À propos
-              </a>
+              </NavLink>
             </li>
           </ul>
         </div>

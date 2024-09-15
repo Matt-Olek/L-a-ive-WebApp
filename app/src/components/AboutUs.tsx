@@ -1,5 +1,11 @@
 import React from "react";
 
+//import ing assets
+import ClaraBerger from "../assets/Clara_Berger.jpg";
+import MatthieuOlekhnovitch from "../assets/Matthieu_Olekhnovitch.jpg";
+import FlorianPalmade from "../assets/Florian_Palmade.jpg";
+import VanishingStripes from "../assets/vanishing-stripes2.svg";
+
 const AboutUs: React.FC = () => {
   // Founders Data
   const founders = [
@@ -8,21 +14,21 @@ const AboutUs: React.FC = () => {
       role: "COO & Co-Founder",
       description:
         "Alice brings over 15 years of experience in AI and legal technology. She spearheads our mission to deliver cutting-edge solutions for automated compliance and customer interactions.",
-      imgSrc: "./src/assets/Clara_Berger.jpg",
+      imgSrc: ClaraBerger,
     },
     {
       name: "Matthieu Olekhnovitch",
       role: "CTO & Co-Founder",
       description:
         "Marc leads the technical team with his extensive expertise in AI development and large-scale system architecture, ensuring seamless integration of our intelligent automation.",
-      imgSrc: "./src/assets/Matthieu_Olekhnovitch.jpg",
+      imgSrc: MatthieuOlekhnovitch,
     },
     {
       name: "Florian Palmade",
       role: "CFO & Co-Founder",
       description:
         "Sophia manages operations and ensures that our platform consistently delivers excellence. Her background in business management and customer service is essential to our success.",
-      imgSrc: "./src/assets/Florian_Palmade.jpg",
+      imgSrc: FlorianPalmade,
     },
   ];
 
@@ -32,7 +38,7 @@ const AboutUs: React.FC = () => {
       <div
         className="hero min-h-screen bg-base-200"
         style={{
-          backgroundImage: "url(./src/assets/vanishing-stripes2.svg)",
+          backgroundImage: `url(${VanishingStripes})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundBlendMode: "luminosity",

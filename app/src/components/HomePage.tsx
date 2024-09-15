@@ -13,6 +13,9 @@ import { Line } from "react-chartjs-2";
 import MockupDiscussion from "./MockupDiscussion";
 import Typewriter from "typewriter-effect";
 
+//importing assets
+import vanishingStripes from "../assets/vanishing-stripes2.svg";
+
 // Register the necessary components in Chart.js
 ChartJS.register(
   CategoryScale, // X-axis scale
@@ -44,7 +47,7 @@ const HomePage: React.FC = () => {
       {/* Hero Section */}
       <div
         className="hero min-h-screen bg-cover bg-center flex items-center justify-center"
-        style={{ backgroundImage: "url(./src/assets/vanishing-stripes2.svg)" }}
+        style={{ backgroundImage: `url(${vanishingStripes})` }}
       >
         <div className="hero-overlay bg-white bg-opacity-10 absolute inset-0"></div>
         <div
