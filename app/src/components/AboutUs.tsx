@@ -1,10 +1,10 @@
 import React from "react";
 
 //import ing assets
-import ClaraBerger from "../assets/Clara_Berger.jpg";
-import MatthieuOlekhnovitch from "../assets/Matthieu_Olekhnovitch.jpg";
-import FlorianPalmade from "../assets/Florian_Palmade.jpg";
-import VanishingStripes from "../assets/vanishing_stripes2.svg";
+import ClaraBerger from "/assets/Clara_Berger.jpg";
+import MatthieuOlekhnovitch from "/assets/Matthieu_Olekhnovitch.jpg";
+import FlorianPalmade from "/assets/Florian_Palmade.jpg";
+import VanishingStripes from "/assets/vanishing_stripes2.svg";
 
 const AboutUs: React.FC = () => {
   // Founders Data
