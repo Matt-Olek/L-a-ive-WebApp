@@ -12,12 +12,12 @@ jobs:
 
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4 # Use latest version
 
       - name: Setup Node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4 # Use latest version
         with:
-          node-version: "16" # Specify Node.js version
+          node-version: "20" # Use Node.js 20
 
       - name: Install dependencies
         run: |
@@ -30,7 +30,7 @@ jobs:
           npm run build  # Build the project
 
       - name: Upload production-ready build files
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4 # Update to v4
         with:
           name: production-files
           path: app/dist # Correct path to the build folder
@@ -43,13 +43,13 @@ jobs:
 
     steps:
       - name: Download artifact
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4 # Update to v4
         with:
           name: production-files
           path: ./dist
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4 # Update to v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist # Ensure the correct path is referenced
