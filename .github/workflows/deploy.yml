@@ -16,18 +16,24 @@ jobs:
 
       - name: Setup Node
         uses: actions/setup-node@v3
+        with:
+          node-version: "16" # Specify Node.js version
 
       - name: Install dependencies
-        uses: bahmutov/npm-install@v1
+        run: |
+          cd app       # Navigate to the app directory
+          npm install  # Install dependencies
 
       - name: Build project
-        run: npm run build
+        run: |
+          cd app       # Navigate to the app directory
+          npm run build  # Build the project
 
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v3
         with:
           name: production-files
-          path: ./dist
+          path: app/dist # Correct path to the build folder
 
   deploy:
     name: Deploy
@@ -46,4 +52,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          publish_dir: ./dist # Ensure the correct path is referenced
